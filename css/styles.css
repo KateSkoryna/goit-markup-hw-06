@@ -465,7 +465,7 @@ img {
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url(/images/on.svg);
+    background-image: url(./images/on.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -473,7 +473,7 @@ img {
   }
 
   .main-form-checkbox:checked + .main-form-policy::before {
-    background-image: url(/images/off.svg);
+    background-image: url(./images/off.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
