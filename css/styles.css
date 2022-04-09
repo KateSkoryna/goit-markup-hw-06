@@ -461,33 +461,24 @@ img {
   }
 
   .main-form-policy::before {
-    transition-property: background-image;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-
     display: inline-block;
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url(./images/on.svg);
+    background-image: url(/images/on.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    
   }
 
   .main-form-checkbox:checked + .main-form-policy::before {
-    background-image: url(./images/off.svg);
+    background-image: url(/images/off.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
-  }
-
-  .main-form-checkbox:focus+.main-form-policy::before {
-    outline: 1px solid var(--team-icon-color);
   }
 
   .policy-link {
