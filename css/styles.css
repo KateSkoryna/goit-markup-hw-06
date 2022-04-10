@@ -376,8 +376,11 @@ img {
 
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
   color: #000;
+}
+
+.main-form-list-item:not(:last-child) {
+margin-bottom: 10px;
 }
 
 .main-form-icon {
@@ -470,6 +473,8 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    outline: none;
+    transition: outline 250ms var(--transition-timing-function);
   }
 
   .main-form-checkbox:checked + .main-form-policy::before {
@@ -479,6 +484,11 @@ img {
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
+  }
+
+  .main-form-checkbox:hover,
+  .main-form-checkbox:focus+.main-form-policy::before {
+    outline: 1px solid var(--acent-color);
   }
 
   .policy-link {
@@ -818,6 +828,7 @@ img {
 }
 
 .footer-address {
+  flex-grow: 1;
   margin-right: 70px;
 }
 
